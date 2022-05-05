@@ -93,7 +93,7 @@ body, html {
   width: 150px;
   height: 14px;
   transform: skew(-12deg) translateX(-50%);
-  background: rgba(82,82,82,0.50);
+  background: rgba(147,147,147,0.50);
   z-index: -1;
 }
 
