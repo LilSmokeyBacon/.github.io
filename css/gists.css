@@ -1,0 +1,14 @@
+.gist-data
+{
+    max-height: 40vh;
+}
+
+/* .gist
+{
+    max-width: 70vw;
+} */
+
+.gist-file
+{
+    overflow: auto;
+}
