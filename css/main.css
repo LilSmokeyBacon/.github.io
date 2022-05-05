@@ -81,7 +81,8 @@ body, html {
 
 .ProjectCard h2 {
   position: absolute;
-  transform: translate(0%, -150%);
+/*  transform: translate(0%, -170%);*/
+	transform: translate(0, -12vh);
 	color: darkgray;
 }
 
@@ -316,6 +317,12 @@ h2::after,
     {
         display: none;
     }
+	
+	.ProjectCard h2 {
+	  	position: absolute;
+	  	transform: translate(0, -10vh);
+		color: darkgray;
+	}
 }
 
 @media only screen and (max-width: 600px) {
@@ -345,11 +352,30 @@ h2::after,
         "imgText"
         "text";
     }
+	
+	.horizontalContent img {
+		max-width: 60%;
+	}
+	
+	.title{
+		font-size: 2vh;
+	}
 
     .ProjectCard p
     {
         padding: 1rem;
     }
+	
+	.ProjectCard h2 {
+	  	position: absolute;
+	  	transform: translate(0%, -100%);
+		color: darkgray;
+	}
+	
+	.contactSection p
+	{
+		color: transparent;
+	}
 }
 
 .GithubButton
