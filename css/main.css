@@ -122,11 +122,25 @@ footer {
     height: 10vh;
     background-color: black;
     box-shadow: 0px 2px 10px #292929 inset;
-    display: grid;
-    align-content: center;
+    display: flex;
+	align-self: center;
+}
+
+footer p{
 	text-align: center;
+	align-content: flex-end;
+	align-self: center;
 	font-size: 2vh;
+	padding-left: 30%;
     color: white;
+}
+
+footer h1{
+    color: indianred;
+    display: inline-flex;
+	text-align: left;
+	align-self: center;
+	font-size: 6vh;
 }
 
 .contactSection
