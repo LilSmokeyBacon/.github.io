@@ -390,6 +390,23 @@ h2::after,
 	{
 		color: transparent;
 	}
+	
+	footer p{
+		text-align: center;
+		align-content: flex-end;
+		align-self: center;
+		font-size: 1vh;
+		padding-left: 5%;
+		color: white;
+	}
+	
+	footer h1{
+		color: indianred;
+		display: inline-flex;
+		text-align: left;
+		align-self: center;
+		font-size: 4vh;
+	}
 }
 
 .GithubButton
