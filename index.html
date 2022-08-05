@@ -36,7 +36,7 @@
 		<div class="parallax" style="background-image: url('Images/EndlessRunner.png');">
 			<div class="container containerOffset">
 				<div id="AboutMe" class="jumpAnchor"></div>
-				<h2>About me</h2>
+				<h2 class="ContainerTitle">About me</h2>
 				<div class="horizontalContent">					
 					<img id="Me" src="Images/PicOfMe1.jpg" alt="Picture of me" style="grid-area: image;" width="100%" height= auto>
 					<p style="grid-area: text;">
@@ -46,25 +46,26 @@
 						However, my main focus within game development is anything low level related,<br> 
 						I love optimizing code and getting the most out of a small piece of code.<br>
 						Besides that I also like more high level things like gameplay and gamedesign.<br>
-						Currently, I'm studying at <u><a target="_blank" href="https://www.digitalartsandentertainment.be/">DAE</a></u>. Where I'm finishing my second year<br>
+						Currently, I'm studying at <u><a target="_blank" href="https://www.digitalartsandentertainment.be/">DAE</a></u>. Where I'm starting my third year<br>
 						and <b>looking</b> for an <b>end‑of‑study</b> internship.<br><br>
 						
 						I have a deep love for general problem solving and like a good challenge,<br>
-						being able to make something and then afterwards being able to see it all come together and function properly, together with being able to constantly learn new things and improve is something that keeps me going.<br>
+						being able to make something and then afterwards being able to see it all come together and function properly, <br>
+						together with being able to constantly learn new things and improve is something that keeps me going.<br>
 					</p>
-					<p style="font-size: 0.7rem; text-align: center; grid-area: imgText;">Picture of me eating ham?</p>
+					<p class="MePictureText" style="font-size: 0.7rem; text-align: center; grid-area: imgText;">Picture of me eating ham?</p>
 				</div>
 			</div>
 		</div>
 		<div class="parallax" style="background-image: url('Images/3DForestLonerBackground.png');">
 			<div class="container containerOffset">
 				<div id="SoftwareSection" class="jumpAnchor"></div>
-				<h2>Portfolio work</h2>
+				<h2 class="ContainerTitle">Portfolio work</h2>
 				<div class="SoftwareList">
 					<a onclick="OpenModalByid('GroupProjects')" class="ProjectCard" target="_blank" rel="noopener noreferrer">
 						<h2>The Ascend</h2>
 					
-						<img src="Images/GroupProjects.png" alt="Game project cover" id="tot">
+						<img src="Images/GroupProjectss.jpg" alt="Game project cover" id="tot">
 						<p>
 							The Ascend is a <b>game project</b> I worked on in a <b>team</b>. The only requrement that we had was to make a local co-op game.
 						</p>
@@ -77,12 +78,12 @@
 						
 						<img src="Images/8080Emulator.jpg" alt="8080" id="8080">
 						<p>
-							This is a <b>8080 prosessor</b> im currently working on<br>
-							It will be fully written in <b>C++</b>, I mainly started this project to learn about <b>emulator</b> development and to do some low level programming.
+							A <b>8080 microprocessor emulator</b> that can run classic space invaders and COM programs, <br>
+							Fully written in <b>C++</b> I mainly chose this emulator to learn more about emulator development and low-level programming.
 						</p>
-<!--						<div class="SoftwarePopup">
-							<img src="https://raw.githubusercontent.com/RikFabri/CHIP8-Emulator/main/ReadmeAssets/Chip8-woking.gif" alt="A gif of a working chip-8 emulator">
-						</div>-->
+						<div class="SoftwarePopup">
+							<img src="https://github.com/Slowlor1ss/8080Emulator/blob/main/Images/Animation2.gif?raw=true" style="width: 70% ; height: 70%" alt="A gif of a working chip-8 emulator">
+						</div>
 					</a>
 					<a onclick="OpenModalByid('rpModal');" class="ProjectCard" target="_blank" rel="noopener noreferrer">
 						<h2>Research</h2>
@@ -144,7 +145,7 @@
 						Add me on LinkedIn
 					</p>
 				</a>
-				<a href="mailto:laurens.krikilion@hotmail.com" class="">
+				<a href="mailto:laurens.krikilion@student.howest.be" class="">
 					<img src="Images/mail.png" alt="Send me a mail">
 					<p>
 						Send me a mail
@@ -156,7 +157,7 @@
 		<footer>
 			<h1>//</h1>
 			<p>
-				Phone (BE): +32 468 32 02 49 | Email: laurens.krikilion@hotmail.com<br>
+				Phone (BE): +32 468 32 02 49 | Email: laurens.krikilion@student.howest.be<br>
 				Copyright &copy <span id="year">2021</span> Laurens Krikilion. All rights reserved
 			</p>
 		</footer>
@@ -171,14 +172,28 @@
 				</div>
 				<div class="modal-body">
 					<h1 class="underlined">8080 processor</h1>
+					<br>
 					<p>
-						Under construction
-					</p><br>
-					<h3>What is the 8080 processor?</h3>
-					<p>The Intel 8080 is an 8-bit microprocessor it was released in 1984 and is the It's successor to the Intel 8008 it has a clock speed of 2 - 4 Mhz with the ability to address up to 64 KB of RAM. 
-						I am using this CPU as my first emulator to emulate space invaders, due to it's simplicity and thorough documentation and is thus perfect to get in to emulating bigger and harder things.
-					</p><br>
-					<img id="Me" src="Images/SpaceInvaders.jpg" alt="Picture of me" style="grid-area: image;" width="50%" height= auto>
+						A complete 8080 microprocessor emulator that can run classic space invaders and some COM programs, 
+						I mainly chose this emulator to learn more about emulator development and low-level programming.
+					<br>
+					<br>
+					All 255 opcodes have been implemented and tested, also some dedicated shift hardware has been emulated as space invaders use this for moving pixels on the screen and thus adds a hardware shift register to help with the math.
+					<br>
+					<br>
+					As the 8080 is a microprocessor and not a complete machine like a Gameboy, it does not have a standard input or sound, only some ports that can receive and send signals.
+					So for sending keyboard signals I used Qt as these are not really part of emulating an 8080. 
+					For now there's no sound but emulating a sound card used in old arcade machines might be a fun project for the future.
+					<br><br><br>
+					<h3> Dissasembleing ROM's: </h3> <br>
+					<img src="https://github.com/Slowlor1ss/8080Emulator/blob/main/Images/DissasembelingROM.png?raw=true" style=" width:40% ; height:40% ">
+					<br><br><br>
+					<h3> Passed MICROCOSM ASSOCIATES 8080/8085 CPU DIAGNOSTIC: </h3> <br>
+					<img src="https://github.com/Slowlor1ss/8080Emulator/blob/main/Images/TestSuccess.png?raw=true" style=" width:40% ; height:40% ">
+					<br><br><br>
+					<h3> Easy debugging: </h3> <br>
+					<img src="https://github.com/Slowlor1ss/8080Emulator/blob/main/Images/Debugging1.png?raw=true" style=" width:40% ; height:40% ">
+					</p>
 					
 <!--					<h3>Emulation</h3>
 					<p>Opcodes are the heart of any emulator (or cpu). For Chip-8 each opcode is 2 bytes (big-endian) consisting of bits to identify the opcode and bits that contain data.
@@ -228,11 +243,37 @@
 				</div>
 				<div class="modal-body">
 					<h1 class="underlined">Reinforcement Learning</h1>
+					<br>
 					<h3>Description</h3>
 					<p>
 						This was a research project I did about reinforcement learning in 2D shooter games, while this project didn't turn out as well as I hoped it would, I did learn a lot from it and really enjoyed it.<br>
-						The code in this project isn't the best as it was mainly focused on research. However besides these things I did get some nice results and managed to write a small article about the process.
+						The code in this project isn't the best as it was mainly focused on research. However besides these things I did get some nice results and managed to write a small article about the process.<br>
+						<br>
+						You can find the full research paper with all the code on my github (see top left for link)<br>
+						but here's my conclusion.<br> 
 					</p>
+					<br>
+					<h3>Conclusion</h3>
+					<p>
+						The aim of this paper was to see how well I can use RL to learn a bot basic AI behaviours and how well it would perform in a 2d shooter.
+						From my attempt, I can conclude that basic AI behaviours aren't too hard to teach, but teaching an agent how to properly navigate or explore
+						a map is a lot harder. I do believe that it is possible, if you have the required knowledge and time for it.
+						When you do manage to do it properly, I can see various advantages for using Rl over rule-based systems such as;
+						- Minimal code needed for the underlying algorithm in some cases
+						- Decrease in the time spent tuning parameters for different situations
+						- The ability to produce different bot personality types
+						I'd say that teaching an agent how to explore a room was hard for
+						my low experience when starting this project - combined with the limited time.
+						It might have been better to start off simpler. However, I did learn a lot about machine learning in general
+						and I have improved dramatically. So therefore - when I have time - I might restart or continue on this project and try to make something better.
+						Further work could be spent on trying different environmental setups with the same agents to see how well they perform in an unknown environment.
+						Some of the tasks have already been tested in different environmental setups like the searching for items and shooting an enemy as those setups were random.
+
+						There is a clear future for RL in games, and the potential is limitless.
+						When you combine it with more conventional rule-based systems, the options are endless.
+						I am genuinely excited to witness the progressions.
+					</p>
+					<img src="https://github.com/Slowlor1ss/2D-Shooter-MachineLearning/blob/main/source/Media/Combined.gif?raw=true" alt="Gif of maya plugin working" style="width: 25%; padding-top: 2%">
 				</div>
 			</div>
 		</div>
@@ -334,25 +375,35 @@
 					<span class="modal-close">&times;</span>
 				</div>
 				<div class="modal-body">
-					<h1 class="underlined">The Ascend (work in progress)</h1>
+					<h1 class="underlined">The Ascend</h1>
+					<br>
 					<p>
-						<u><a target="_blank" href="https://goldarf.itch.io/gameproject-wip-team21">You can follow the progress here!</a></u><br>
+						You can check out the whole progress of making the game <a href="https://goldarf.itch.io/the-ascend/devlog" target="_blank">here</a>
+					</p>
+					<br>
+					<p>
 						The Ascend is a game where the two main characters Bling and Blong fell down a ravine and on their way out they uncover the mysteries of a long lost tomb.<br>
 						It's a game where you have to work together to solve puzzles and make your way trough the level, the only catch is that you bound together by a rope, luckly you can use this rope to slove the puzzles and get out of the ravine.<br>
  						Everything was made in unity and version controlled with <u>perforce</u>.
 					</p><br>
-					<h3>The team and responsibilities</h3>
+					<h3>The team and responsibilities</h3><br>
+					<img id="TheTeam" src="Images/I+c0zX.png" alt="Picture of me" style="grid-area: image;" width="25%" height= "auto">
 					<p>
 						We were a team of 1 programmer and 3 artists. Initially, we had 2 programmes but one of them dropped out before during the prototyping phase.<br>
 						So essentially all the programming was done by myselfs.
 					</p><br>
-					<h3>Videos! (In the future)</h3>
-					<!--<div class="horizontalToTVideos">
+					<h3>Video</h3>
+					<br>
+<!--					<div class="horizontalToTVideos">-->
+					<div class="video-container">
+						<iframe width="50%" src="https://www.youtube.com/embed/bE9wlSrDtwM" title="The Ascend gameplay trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!--
 						<h4 class="underlined" style="grid-area: label1;">Trailer</h4>
 						<h4 class="underlined" style="grid-area: label2;">Gameplay</h4>
-						<video style="grid-area: vid1; width: 100%; height: 100%; background: black;" src="Images/ToT_Trailer.mp4" alt="Game trailer" controls></video>
+						<video style="grid-area: vid1; width: 100%; height: 100%; background: black;" src="https://www.youtube.com/embed/bE9wlSrDtwM" alt="Game trailer" controls></video>
 						<video style="grid-area: vid2; width: 100%; height: 100%; background: black;" src="Images/ToT.mp4" alt="A gameplay video" controls muted></video>
-					</div>-->
+-->
+					</div>
 				</div>
 			</div>
 		</div>
