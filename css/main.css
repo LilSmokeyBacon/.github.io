@@ -97,11 +97,11 @@ body, html {
 .ProjectCard h2::before {
   content: "";
   position: absolute;
-  left: 40%;
+  left: 0%;
   bottom: 10px;
   width: 160px;
   height: 14px;
-  transform: skew(-12deg) translateX(-50%);
+  transform: skew(-12deg) translateX(-7%);
   background: rgba(147,147,147,0.50);
   z-index: -1;
 }
@@ -146,7 +146,7 @@ footer p{
 	text-align: center;
 	align-content: flex-end;
 	align-self: center;
-	font-size: 1.3vw;
+	font-size: 0.8vw;
     color: white;
 	margin: auto;
 }
@@ -424,7 +424,7 @@ h2::after,
 		text-align: center;
 		align-content: flex-end;
 		align-self: center;
-		font-size: 1vh;
+		font-size: 0.8vh;
 		color: white;
 	}
 	

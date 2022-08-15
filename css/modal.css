@@ -70,3 +70,21 @@
     overscroll-behavior: contain;
     padding: 2rem;
 }
+.modal-body p
+{
+    margin-right: 40vw;
+}
+
+@media only screen and (max-width: 1000px){
+	
+	.modal-body p
+	{
+		margin-right: 0vw;
+	}
+	
+}
+
+.ImagesSideBySide
+{
+	display:inline-block;
+}

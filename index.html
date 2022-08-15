@@ -12,11 +12,11 @@
 	<link rel="stylesheet" href="css/gists.css">
 	<link rel="stylesheet" href="css/modal.css">
 	<link rel="stylesheet" href="css/ToTVideos.css">
-	<link rel="shortcut icon" href="Images/Icon.png" type="image/x-icon">
+	<link rel="shortcut icon" href="Images/RubberDuckIcon.png" type="image/x-icon">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap" rel="stylesheet"> 
-    <title>Laurens Krikilion</title>
+    <title>Laurens Krikilion Portfolio</title>
 </head>
     <body>
 		<div class="navbar">
@@ -46,9 +46,13 @@
 						I'm a programmer from Belgium with a broad interest in anything game-related.<br>
 						I have a deep love for learning and understanding new things<br>
 						ranging from game development to emulation and even ranging all the way to psychology<br><br>
-						However, my main focus within game development is anything low level related,<br> 
-						I love optimizing code and getting the most out of a small piece of code.<br>
-						Besides that I also like more high level things like gameplay and gamedesign.<br>
+						
+						However, my main focus within game development is <b>gameplay</b>, for the freedom and creativity that comes with it.<br>
+						Seeing a game mechanic you helped develop, in a final product and how it works nicely in the game <br>
+						and together with the other mechanics is an amazing thing.<br>
+						I like working in a team where everyone can help each other and shares a passion for making games.<br>
+						Besides that I also love anything more <b>low-level</b> related,<br> 
+						I love optimizing code and getting the most out of a small piece of code<br>
 						Currently, I'm studying at <u><a target="_blank" href="https://www.digitalartsandentertainment.be/">DAE</a></u>. Where I'm starting my third year<br>
 						and <b>looking</b> for an <b>end‑of‑study</b> internship.<br><br>
 						
@@ -56,7 +60,7 @@
 						being able to make something and then afterwards being able to see it all come together and function properly, <br>
 						together with being able to constantly learn new things and improve is something that keeps me going.<br>
 					</p>
-					<p class="MePictureText" style="font-size: 0.7rem; text-align: center; grid-area: imgText;">Picture of me eating ham?</p>
+					<p class="MePictureText" style="font-size: 0.7rem; text-align: center; grid-area: imgText;">The only (decent?) picture of myself I could find at the moment</p>
 				</div>
 			</div>
 		</div>
@@ -70,7 +74,7 @@
 					
 						<img src="Images/GroupProjectss.jpg" alt="Game project cover" id="tot">
 						<p>
-							The Ascend is a <b>game project</b> I worked on in a <b>team</b>. The only requrement that we had was to make a local co-op game.
+							The Ascend is a <b>game project</b> I worked on in a <b>team</b>, it was made in Unity and version controlled by <b>perforce</b>. The only requrement that we had was to make a local co-op game.
 						</p>
 						<!--<div class="SoftwarePopup">
 							<video src="Images/ToT.mp4" alt="A gameplay video" autoplay muted controls loop></video>
@@ -85,30 +89,30 @@
 							Fully written in <b>C++</b> I mainly chose this emulator to learn more about emulator development and low-level programming.
 						</p>
 						<div class="SoftwarePopup">
-							<img src="https://github.com/Slowlor1ss/8080Emulator/blob/main/Images/Animation2.gif?raw=true" style="width: 70% ; height: 70%" alt="A gif of a working chip-8 emulator">
+							<img src="https://github.com/Slowlor1ss/8080Emulator/blob/main/Images/Animation2.gif?raw=true" style="width: 70% ; height: 70%" alt="A gif of a working 8080 emulator">
 						</div>
 					</a>
 					<a onclick="OpenModalByid('rpModal');" class="ProjectCard" target="_blank" rel="noopener noreferrer">
-						<h2>Research</h2>
+						<h2>Reinforcement Learning</h2>
 						
 						<img src="Images/RenforedLearning.png" alt="View range of agent" id="nox">
 						<p>
 							This was a <b>research project</b> I did about <b>reinforcement learning</b> in 2D shooter games.
 						</p>
 						<div class="SoftwarePopup">
-							<img src="https://github.com/Slowlor1ss/2D-Shooter-MachineLearning/blob/main/source/Media/Combined.gif?raw=true" alt="Gif of maya plugin working">
+							<img src="https://github.com/Slowlor1ss/2D-Shooter-MachineLearning/blob/main/source/Media/Combined.gif?raw=true" alt="Gif of machineLearning result">
 						</div>
 					</a>
 					<a onclick="OpenModalByid('PlayTimeModal');" class="ProjectCard" target="_blank" rel="noopener noreferrer">
-						<h2>Game Jam</h2>
+						<h2>RayMarching</h2>
 						
-						<img src="Images/GameJam.jpg" alt="Video game nox cover" id="nox">
+						<img src="Images/spheretrace-modified.jpg" alt="Ray matching 2D example" id="nox">
 						<p>
-							This is my first <b>game jam</b> I ever attended, it was made in unreal and version controlled by <b>perforce</b>.
+							This is a small Unity project I made to experiment with <b>compute shaders</b> and <b>ray marching</b>.
 						</p>
-<!--						<div class="SoftwarePopup">
-							<iframe style="border-radius: 5px;" width="100%" height="315" src="https://www.youtube-nocookie.com/embed/plOx-9IB80o?controls=0&autoplay=1&mute=1&playlist=plOx-9IB80o&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
-						</div>-->
+						<div class="SoftwarePopup">
+							<img src="Images/BallsSmaller.gif" alt="Gif of blending balls using ray-marching">
+						</div>
 					</a>
 					<!--<a onclick="OpenModalByid('crunchModal')" class="ProjectCard" target="_blank" rel="noopener noreferrer">
 						<img src="Images/TheCrunch.png" alt="Game jam game cover" id="crunch">
@@ -126,14 +130,17 @@
 							<u><b>[WIP] Gameboy sound</b></u><br>
 							I'm currently researching how the gameboy played <b>sound</b> for my graduation work. The eventual goal is to add accurate sound to an existing gameboy emulator. 
 						</p>
-					</a>
-					<a href="WeekendProjects" class="ProjectCard" style="cursor: not-allowed; background-color: gainsboro;" onclick="return false;">
-						<img src="Images/WeekendProjectsIcon.png" alt="Weekend projects" id="WeekendProjects">
+					</a>-->
+					<a href="Respect-the-lawn" class="ProjectCard" style="cursor: not-allowed; background-color: rgba(66,66,66,0.40);" onclick="return false;" onFocus="return false">
+						<h2>Respect The Lawn</h2>
+						
+						<img src="Images/RespectTheLawn.png" alt="Respect the lawn" id="Respect-the-lawn">
 						<p>
 							<b>Under construction</b><br>
-							A brand new, slightly more personal website where I write about random projects.
+							A brand new game I'm working on with a lovely team, currently still in prototyping phase but soon enough
+							more about the game and development will be available here.
 						</p>
-					</a>-->
+					</a>
 				</div>
 			</div>
 		</div>
@@ -169,7 +176,7 @@
 		<div class="modal" id="8080Modal">
 			<div class="modal-content">
 				<div class="modal-header">
-					<a class="GithubButton" href="https://github.com/Slowlor1ss/8080Emulator" target="_blank" rel="noopener noreferrer">View&nbspon&nbspGitHub</a>
+					<a class="GithubButton" href="https://github.com/Slowlor1ss/8080Emulator" target="_blank" rel="noopener noreferrer">View&nbsp;on&nbsp;GitHub</a>
 					<div></div>
 					<span class="modal-close">&times;</span>
 				</div>
@@ -240,7 +247,7 @@
 		<div class="modal" id="rpModal">
 			<div class="modal-content">
 				<div class="modal-header">
-					<a class="GithubButton" href="https://github.com/Slowlor1ss/Reinforcement-Learning-in-a-2D-Shooter" target="_blank" rel="noopener noreferrer">View&nbspon&nbspGitHub</a>
+					<a class="GithubButton" href="https://github.com/Slowlor1ss/Reinforcement-Learning-in-a-2D-Shooter" target="_blank" rel="noopener noreferrer">View&nbsp;on&nbsp;GitHub</a>
 					<div></div>
 					<span class="modal-close">&times;</span>
 				</div>
@@ -276,40 +283,42 @@
 						When you combine it with more conventional rule-based systems, the options are endless.
 						I am genuinely excited to witness the progressions.
 					</p>
-					<img src="https://github.com/Slowlor1ss/2D-Shooter-MachineLearning/blob/main/source/Media/Combined.gif?raw=true" alt="Gif of maya plugin working" style="width: 25%; padding-top: 2%">
+					<img src="https://github.com/Slowlor1ss/2D-Shooter-MachineLearning/blob/main/source/Media/Combined.gif?raw=true" alt="Gif of machine learning" style="width: 25%; padding-top: 2%">
 				</div>
 			</div>
 		</div>
 
-		<!-- PlayTime modal -->
+		<!-- raymarching modal -->
 		<div class="modal" id="PlayTimeModal">
 			<div class="modal-content">
 				<div class="modal-header">
-					<a class="GithubButton" href="https://itch.io/jam/dae-crea-week-2022/rate/1497376" target="_blank" rel="noopener noreferrer">View&nbspon&nbspItch.io</a>
+					<a class="GithubButton" href="https://github.com/Slowlor1ss/Raymarching/" target="_blank" rel="noopener noreferrer">View&nbsp;on&nbsp;GitHub</a>
 					<div></div>
 					<span class="modal-close">&times;</span>
 				</div>
 				<div class="modal-body">
-					<h1 class="underlined">PlayTime</h1>
+					<h1 class="underlined">Raymarching</h1>
 					<h3>Description</h3>
-					<p>This is my first <b>game jam</b> I ever attended, it was made in unreal but due to a lack of time we did most things in blueprints.
-						I really enjoyed the game jam and am planning on joining another one in the future.
+					<p>This was my first time using unity's compute shader so I started off by making a small test project randomizing the color and position of some cubes,<br>
+						I found that it wasn't too diffrent from a class I had in school where we made a raytracer and rasterizer in C++ using DirectX and HLSL,so it was suprisingly easy to get in to.<br>
+					After that I felt confident enough to start on making the raymarching project.<br><br>
+<!--					I got the idea of making something with raymarching from a video I watched by <a href="https://www.youtube.com/c/SebastianLague" target="_blank">Sebastian Lague</a> and was happy to find some nice documentation in his video description that helped me along the way.<br>-->
+						Making the actual raymarching shader was suprisingly easy, having made a raytracer in the past, it was interesting to see the differences between<br>
+						the raytracer and raymarching and seeing whats possible using the signed distance formulas raymarching uses.<br>
+						If you're interested you can find and download my project and or read more about it on <a href="https://github.com/Slowlor1ss/Raymarching/" target="_blank">my github</a>.<br>
 					</p><br>
-					<h3>Team</h3>
+					<h3>Result</h3>
 					<p> 
-						Our team existed of 2 programmers and 3 artists.
-						 We had 4 days to finish the game.
-						I mostly did the gameplay programming, including:
+						Using signed distance functions allows you to do some operation between shapes like masking, blending, and cutting
+						and by combining shapes and using those operation you can create many thing's (some more usefull than others) 
+						but regardless of the use case it can be very fun to play around with.
 					</p><br>
-					<ul>
-						<li>All the AI</li>
-						<li>Picking up and throwing items</li>
-						<li>Main game loop</li>
-						<li>Hiding and showing walls</li>
-						<li>Implementing animations</li>
-						<li>Collectables</li>
-						<li>Exit door</li>
-					</ul>
+					<div class="ImagesSideBySide">
+						<img src="Images/ResultRayMarching.gif" style="width: 40vw;">
+						<img src="Images/csg-wiki.png" alt="Image from "Constructive solid geometry" on Wikipedia" style="float: right; width: 26vw; margin-left: 15vw">
+						<div style="font-size: 0.7vw;">&ensp;Small animation I made using my raymarching code</div>
+						<div style="font-size: 0.7vw; float: right;">Image from "Constructive solid geometry" on Wikipedia<br>demonstrating some of the shape operations</div>
+					</div>
 				</div>
 			</div>
 		</div>
