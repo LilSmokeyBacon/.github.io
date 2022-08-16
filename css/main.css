@@ -398,7 +398,7 @@ h2::after,
     }
 	
 	.horizontalContent img {
-		max-width: 20%;
+		max-width: 60%;
 	}
 	
 	.MePictureText {
@@ -438,6 +438,10 @@ h2::after,
 }
 
 @media only screen and (max-width: 600px) {
+	
+	.navbar {
+		padding: 1rem 1rem 0 0;
+	}
 	
     .ProjectCard {
         display: block;
