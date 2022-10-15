@@ -110,6 +110,10 @@ body, html {
 	margin-bottom: 2vh;
 }
 
+.navbar img{
+	border: 0; display:inline; margin: -5px 2px; box-shadow: none; width: 1.5%;
+}
+
 .navbar a {
     text-decoration: none;
     color: var(--important-colour);
@@ -435,12 +439,18 @@ h2::after,
 		align-self: center;
 		font-size: 4vh;
 	}
+	
+	.navbar img {
+		padding: 0%;
+		width: 0%;
+	}
 }
 
 @media only screen and (max-width: 600px) {
 	
 	.navbar {
-		padding: 1rem 1rem 0 0;
+		padding: 1rem 0rem 0 0;
+		width: 90vw;
 	}
 	
     .ProjectCard {
